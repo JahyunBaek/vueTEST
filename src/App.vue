@@ -1,5 +1,9 @@
 <template>
   <div>
+    <router-link to="/">Home</router-link>
+    <router-link to="/event">Event</router-link>
+  </div>
+  <div>
     <router-view />
   </div>
 </template>

@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1>Home Page</h1>
-    <div></div>
     <button @click="increment">
       {{ count }}
       <!-- .value가 필요하지 않습니다. -->
