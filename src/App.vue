@@ -4,6 +4,8 @@
     <router-link to="/event">Event</router-link>
     <router-link to="/form">Form</router-link>
     <router-link to="/watch">Watch</router-link>
+    <router-link to="/template">Templete</router-link>
+    <router-link to="/compo">Component</router-link>
   </div>
   <div>
     <router-view />
