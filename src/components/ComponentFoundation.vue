@@ -6,6 +6,7 @@ const posts = ref([
   { id: 2, title: "Vue로 블로깅하기" },
   { id: 3, title: "Vue가 재미있는 이유" },
 ]);
+const postFontSize = ref(1);
 </script>
 
 <template>
@@ -15,4 +16,14 @@ const posts = ref([
     :key="post.id"
     :title="post.title"
   ></button-counter>
+
+  <div :style="{ fontSize: postFontSize + 'em' }">
+    <ButtonCounter
+      v-for="post in posts"
+      :key="post.id"
+      :title="post.title"
+      @enlarge-text="postFontSize += 0.1"
+    />
+  </div>
+  <global-component></global-component>
 </template>
