@@ -6,6 +6,7 @@
     <router-link to="/watch">Watch</router-link>
     <router-link to="/template">Templete</router-link>
     <router-link to="/compo">Component</router-link>
+    <router-link to="/composable">Composable</router-link>
   </div>
   <div>
     <router-view />

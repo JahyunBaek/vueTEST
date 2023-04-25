@@ -6,7 +6,7 @@ import Form from "@/components/FormBinding";
 import Watch from "@/components/WatchPage";
 import Template from "@/components/TempletePage";
 import ComponentExample from "@/components/ComponentFoundation";
-
+import Composable from "@/components/Composable";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -17,6 +17,7 @@ const router = createRouter({
     { path: "/watch", name: "watch", component: Watch },
     { path: "/template", name: "template", component: Template },
     { path: "/compo", name: "compo", component: ComponentExample },
+    { path: "/composable", name: "composable", component: Composable },
     {
       path: "/:pathMatch(.*)",
       name: "not-found",
